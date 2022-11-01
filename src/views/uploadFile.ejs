@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NODE.JS Basic</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/upload">Upload file</a>
+    </div>
+
+    <div class="upload-file-container">
+        <h1>Handling File Upload using Express.js and Multer</h1>
+        <form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+            <div>
+                <h3>Upload Single File:</h3>
+                <div>
+                    <span>Select your profile picture:</span>
+                    <input type="file" name="profile_pic">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn-save">Upload</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data">
+            <div>
+                <div>
+                    <h3>Upload Multiple File:</h3>
+                    <span>Select multiple images:</span>
+                    <input type="file" name="multiple_images" multiple />
+                </div>
+            </div>
+            <div>
+                <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
